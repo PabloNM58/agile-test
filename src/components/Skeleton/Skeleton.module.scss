@@ -1,0 +1,34 @@
+.skeletonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skeleton {
+  background: $gainsboro;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeletonFirstLine,
+.skeletonSecondLine,
+.skeletonThirdLine {
+  background: $gainsboro;
+}
+
+.skeletonFirstLine {
+  width: 40%;
+  height: 20px;
+}
+
+.skeletonSecondLine {
+  width: 60%;
+  height: 12px;
+}
+
+.skeletonThirdLine {
+  width: 90%;
+  height: 12px;
+}

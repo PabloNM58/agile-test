@@ -1,0 +1,20 @@
+.card {
+  border: 1px solid $grey;
+  border-radius: 5px;
+  padding: 10px;
+  color: $charcoal-gray;
+  display: flex;
+  flex-direction: column;
+  img {
+    aspect-ratio: 1/1;
+    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 40vh;
+  }
+  h3 {
+    margin: 15px 0px;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    border: none;
+  }
+}

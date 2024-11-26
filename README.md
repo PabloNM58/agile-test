@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The application was developed using Next.js with TypeScript and SCSS for styling.
 
-## Getting Started
+Global state management was implemented using React's useContext. This choice was based on its simplicity and suitability for small-scale applications, keeping the solution lightweight and efficient.
 
-First, run the development server:
+The provided code for fetching data had an error that I was unable to resolve after checking the faker.js documentation. In order to continue technical test and reach my goals within the available time, I decided to make a slight modification to the original code. This adjustment does not affect the nature or purpose of the test.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I implemented a basic lazy loading strategy to load and render data on demand, optimizing the user experience and overall application performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If I had more time, I would consider implementing the following improvements:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+· Fix the original bug
+Investigate and resolve data loading issues in the provided code to ensure full alignment with the original requirements.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+· Integration of React Query
+Manage API requests more robustly with React Query, with built-in support for caching, retries, and automatic synchronization.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+· Automated Testing
+Add unit tests using tools like Jest and the React Testing Library to ensure code stability and quality.

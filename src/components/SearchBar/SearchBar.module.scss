@@ -1,0 +1,193 @@
+.sharedSearchBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border: 1px solid $snow;
+  border-radius: 25px;
+  padding: 0px 20px;
+}
+
+.sharedInput {
+  flex: 1;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 17px;
+  background-color: $white;
+  color: $black;
+}
+
+.searchBar {
+  @extend .sharedSearchBar;
+  width: 100%;
+  max-width: $desktop-breakpoint;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  &:focus-within {
+    border-color: $gray;
+  }
+
+  input {
+    @extend .sharedInput;
+    padding: 15px 40px 15px 15px;
+
+    &::placeholder {
+      color: $coffe-light;
+    }
+
+    @media (max-width: $xl-screen-breakpoint) {
+      width: 80%;
+      height: 35px;
+    }
+
+    @media (max-width: $desktop-breakpoint) {
+      width: 70%;
+      height: 35px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+      width: 70%;
+      height: 35px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 90%;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: $xl-screen-breakpoint) {
+    width: 80%;
+    height: 40px;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    width: 80%;
+    height: 40px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 70%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 90%;
+  }
+}
+
+.searchInNavbar {
+  @extend .sharedSearchBar;
+  width: 70%;
+  max-width: 1080px;
+  box-sizing: border-box;
+
+  &:focus-within {
+    border-color: $gray;
+  }
+  input {
+    @extend .sharedInput;
+    padding: 8px 30px 8px 8px;
+
+    &::placeholder {
+      color: $coffe-light;
+    }
+
+    @media (max-width: $desktop-breakpoint) {
+      font-size: 18px;
+      padding: 12px;
+      height: 35px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+      font-size: 15px;
+      padding: 5px;
+      min-width: 90%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    width: 60%;
+    height: 40px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 70%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+}
+.iconSearch {
+  font-size: 20px;
+  color: $medium-gray;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 14px;
+  }
+}
+.iconSearchInNavbar {
+  font-size: 18px;
+  color: $medium-gray;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 12px;
+  }
+}
+
+.clearButton {
+  position: absolute;
+  background: none;
+  right: 10px;
+  border: none;
+  font-size: 35px;
+  color: $davys-grey-light;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+  opacity: 0;
+
+  &:hover {
+    color: $black;
+  }
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 20px;
+  }
+}

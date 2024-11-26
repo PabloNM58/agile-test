@@ -1,0 +1,36 @@
+.mainContainer {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: 80% 20%;
+  padding: 0rem 5rem;
+
+  @media (max-width: $xl-screen-breakpoint) {
+    grid-template-columns: 70% 30%;
+    padding: 0rem 2rem;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    grid-template-columns: 100%;
+    padding: 0rem 1rem;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 7rem;
+  }
+}
+
+.resultsColumn {
+  padding-right: 2rem;
+  @media (max-width: $desktop-breakpoint) {
+    grid-template-columns: 100%;
+    padding: 1rem;
+  }
+}
+
+.cardColumn {
+  padding: 20px;
+
+  @media (max-width: $desktop-breakpoint) {
+    display: none;
+  }
+}

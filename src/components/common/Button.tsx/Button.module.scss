@@ -1,0 +1,44 @@
+.button {
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+
+  @media (max-width: $desktop-breakpoint) {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+.buttonActive {
+  @extend .button;
+  color: $black;
+  background-color: $light-gray;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    background-color: $gainsboro;
+  }
+}
+
+.buttonDisabled {
+  @extend .button;
+  background-color: $very-light-gray;
+  color: $snow;
+  cursor: not-allowed;
+  pointer-events: none;
+}

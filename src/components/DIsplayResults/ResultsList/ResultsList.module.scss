@@ -1,0 +1,18 @@
+.list {
+  list-style-type: none;
+  color: $charcoal-gray;
+
+  li {
+    gap: 15px;
+    margin-bottom: 3rem;
+    cursor: pointer;
+  }
+
+  a {
+    font-size: 16px;
+  }
+  h3 {
+    color: $prussian-blue;
+    margin: 10px 0px;
+  }
+}
